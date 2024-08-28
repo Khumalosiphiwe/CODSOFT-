@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="https://drive.google.com/file/d/1mZzpQk2bqZ4CZhEKF0ywaZLjL3HaPINo/view?usp=drivesdk">Résumé</a></li>
+                <li><a href="https://docs.google.com/presentation/d/15Q8b8SzcKdkujx9GXj0OVw6jL8fKwaCvkUgyOlU7pOo/edit?usp=drivesdk">Recent Work</a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=61564641853446">Contact Me</a></li>
+            </ul>
+        </nav>
+        <div class="intro">
+            <h2>WEB DESIGNER & DEVELOPER</h2>
+            <h1>Hi, i'm Siphiwe Khumalo</h1>
+            <p>I'm a web designer and developer, and I create websites that drive business results through intuitive user experiences.</p>
+            <div class="buttons">
+                <a href="https://wa.me/638776984" target="_blank" class="button">Let's Chat on WhatsApp</a>
+                <a href="https://www.linkedin.com/in/siphiwe-khumalo-97a0aa306/" class="button">Connect on Linkedin</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Siphiwe khumalo. All rights reserved.</p>
+    </footer>
+
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="app.js"></script>
+</body>
+                      </html>
+
+/* Reset some basic elements for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    background: linear-gradient(135deg, #0f1e3d, #1a2f64, #274a97, #3b6bd4); /* Gradient with dark blue details */
+    background-size: 200% 200%; /* Make the gradient larger to show detail */
+    animation: gradientAnimation 15s ease infinite; /* Smooth animation to make the gradient more dynamic */
+    margin: 0;
+    padding: 0;
+}
+
+/* Gradient animation */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Header section styles */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: transparent; /* Transparent to show the background gradient */
+    padding: 0 20px;
+    text-align: center;
+    position: relative;
+}
+
+/* Navbar styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    top: 20px; /* Adjusts the distance from the top */
+    right: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+/* Introduction section styles */
+.intro {
+    max-width: 600px;
+    margin-top: 80px; /* Adds more space between the nav bar and intro section */
+}
+
+.intro h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.intro h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #c7d0e5;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #e1e4ec;
+}
+
+/* Button styles */
+.buttons {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.button {
+    background: linear-gradient(45deg, #007bff, #00d4ff); /* Gradient blue */
+    color: #ffffff;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.button:hover {
+    background: linear-gradient(45deg, #0056b3, #0098cc); /* Darker gradient on hover */
+}
+
+/* Footer section styles */
+footer {
+    background-color: transparent;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+                      
